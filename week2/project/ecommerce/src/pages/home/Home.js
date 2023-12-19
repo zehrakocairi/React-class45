@@ -1,12 +1,10 @@
 import Categories from "../../components/category/Categories";
 import Products from "../../components/product/Products";
 import { useState, useEffect } from "react";
-import categoriesData from "../../fake-data/all-categories.js";
-import productsData from "../../fake-data/all-products.js";
 
 const Home = () => {
-  const [filteredProducts, setFilteredProducts] = useState(productsData);
-  const [categories, setCategories] = useState(categoriesData.map((category) => category.replace("FAKE:", "").trim()));
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   const fetchCategories = async function () {
     const response = await fetch("https://fakestoreapi.com/products/categories");
