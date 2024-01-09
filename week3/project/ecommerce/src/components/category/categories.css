@@ -1,0 +1,13 @@
+#category-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.category {
+  padding: 20px 65px;
+  background-color: #c2d3f0;
+  cursor: pointer;
+}
+
+.category.selected {
+  background-color: #5573a6;
+}
