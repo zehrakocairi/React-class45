@@ -13,6 +13,7 @@ const FavoriteProducts = () => {
           return fetch(`https://fakestoreapi.com/products/${productId}`).then((response) => response.json());
         })
       );
+      if (data.length === 0) return;
 
       setFavorite([...data]);
     }
