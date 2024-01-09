@@ -21,7 +21,7 @@ const Product = ({ product }) => {
   return (
     <div className="product">
       <img className="product-image" alt={product.title} src={product.image} />
-      <Link to={"product/" + product.id}>{product.title}</Link>
+      <Link to={"/product/" + product.id}>{product.title}</Link>
       <img className="heart-icon" alt="heart-solid" src={isFavorite(product.id) ? heartSolid : heartRegular} onClick={() => handleClick(product.id)} />
     </div>
   );
