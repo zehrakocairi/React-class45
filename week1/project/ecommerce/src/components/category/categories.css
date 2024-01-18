@@ -11,3 +11,16 @@
 .category.selected {
   background-color: #5573a6;
 }
+
+@media only screen and (max-width: 1000px) {
+  #category-container {
+    overflow: scroll;
+  }
+}
+
+/* FOR MOBILE */
+@media only screen and (max-width: 600px) {
+  #category-container {
+    flex-direction: column;
+  }
+}

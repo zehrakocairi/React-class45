@@ -4,9 +4,9 @@ import "./categories.css";
 const Categories = ({ categoriesData, onCategoryChanged }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  function changeCategory(cat) {
-    setSelectedCategory(cat);
-    onCategoryChanged(cat);
+  function changeCategory(category) {
+    setSelectedCategory(category);
+    onCategoryChanged(category);
   }
 
   return (
