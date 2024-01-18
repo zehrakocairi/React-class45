@@ -4,6 +4,9 @@
   margin-left: 50px;
 }
 
+.product-detail-wrapper {
+  display: flex;
+}
 .detail-product-image img {
   width: 100%;
 }

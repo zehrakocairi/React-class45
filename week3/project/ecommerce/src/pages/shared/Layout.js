@@ -7,9 +7,9 @@ const Layout = () => {
     <div>
       <div className="navigation-link">
         <Link to={"/"} style={{ marginRight: "30px" }}>
-          Product
+          Products
         </Link>
-        <Link to={"/favorites/"}>Favorites</Link>
+        <Link to={"/favorites"}>Favorites</Link>
       </div>
       <h1>Store the Cool</h1>
       <div>

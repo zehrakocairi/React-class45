@@ -1,13 +1,31 @@
-#category-container {
+.category-container {
   display: flex;
+  margin-top: 50px;
+  overflow: scroll;
   justify-content: space-evenly;
+}
+.product-detail-wrapper {
+  display: flex;
 }
 .category {
   padding: 20px 65px;
   background-color: #c2d3f0;
   cursor: pointer;
 }
-
 .category.selected {
   background-color: #5573a6;
+}
+
+/* FOR TABLET */
+@media only screen and (max-width: 1000px) {
+  #category-container {
+    overflow: scroll;
+  }
+}
+
+/* FOR MOBILE */
+@media only screen and (max-width: 600px) {
+  #category-container {
+    flex-direction: column;
+  }
 }

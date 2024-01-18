@@ -8,7 +8,7 @@ import FavoriteProducts from "./pages/favoriteProducts/FavoriteProducts.js";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <ApplicationProvider>
         <BrowserRouter>
           <Routes>
